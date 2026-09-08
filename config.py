@@ -9,10 +9,10 @@ BOT_TOKEN = os.getenv("BOT_TOKEN", "")
 SESSION_STRING = os.getenv("SESSION_STRING", "")
 
 SUDO_USERS = [
-    int(x) for x in os.getenv("SUDO_USERS", "7861095748").split(",") if x.strip().isdigit()
+    int(x) for x in os.getenv("SUDO_USERS", "").split(",") if x.strip().isdigit()
 ]
 
-LOG_GROUP_ID = os.getenv("LOG_GROUP_ID", "-1004317165206")
+LOG_GROUP_ID = os.getenv("LOG_GROUP_ID", "")
 LOG_GROUP_ID = int(LOG_GROUP_ID) if LOG_GROUP_ID.strip().lstrip("-").isdigit() else None
 
 DOWNLOADS_DIR = "downloads"
